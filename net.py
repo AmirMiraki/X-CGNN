@@ -152,7 +152,7 @@ class gtnet(nn.Module):
                 # x = self.gconv1[i](x, adp)+self.gconv2[i](x, adp.transpose(1,0))
                 sh=x.shape
                 # print(sh)
-                x = self.gconv1[i](x.view(-1,16), edge_index = edg[0][:,:sh[3]])#, edge_weight = edg[1][:sh[3]])
+                x = self.gconv1[i](x.view(-1,16), edge_index = self.edg[:,:sh[3]])#, edge_weight = edg[1][:sh[3]])
                 # print(sh,x.shape)
                 x = x.view(sh)
             else:
