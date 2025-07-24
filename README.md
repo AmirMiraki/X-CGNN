@@ -1,4 +1,4 @@
-# Electricity Demand Forecasting Using eXplainable Causal Graph Neural Network (X-CGNN)
+# Electricity Demand Forecasting at Distribution and Household Levels Using Explainable Causal Graph Neural Network (X-CGNN)
 
 ![X-CGNN Pipeline](Pipeline_X-CGNN.png)
 
