@@ -5,6 +5,7 @@
 This repository contains the code for our paper:
 
 **[Electricity demand forecasting at distribution and household levels using explainable causal graph neural network](https://doi.org/10.1016/j.egyai.2024.100368)**  
+
 ✍ **Authors:** Amir Miraki, Pekka Parviainen, Reza Arghandeh  
 📚 **Journal:** *Energy and AI, Volume 16 (2024)*  
 🔓 **Open Access:** Published by Elsevier under [CC BY 4.0 License](http://creativecommons.org/licenses/by/4.0/)
@@ -58,18 +59,11 @@ The X-CGNN framework is composed of the following modules:
 
 ---
 
-## 📝 Citation
+## ▶️ Usage
 
-If you find our work useful, please cite our paper:
+> ⚙️ **Dependencies:** This project uses [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/). Please follow the [official installation instructions](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html) compatible with your CUDA and PyTorch setup.
 
-```bibtex
-@article{miraki2024electricity,
-  title={Electricity demand forecasting at distribution and household levels using explainable causal graph neural network},
-  author={Miraki, Amir and Parviainen, Pekka and Arghandeh, Reza},
-  journal={Energy and AI},
-  volume={16},
-  pages={100368},
-  year={2024},
-  publisher={Elsevier},
-  doi={10.1016/j.egyai.2024.100368}
-}
+### 🔧 Run X-CGNN on the Tetuan dataset
+
+```bash
+python X_CGNN.py
