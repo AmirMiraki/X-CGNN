@@ -110,7 +110,7 @@ parser.add_argument('--graph_data', type=str, default='Data/Tetuan/Tetuan_graph.
                     help='location of the graph data file')
 parser.add_argument('--log_interval', type=int, default=100, metavar='N',
                     help='report interval')
-parser.add_argument('--save', type=str, default='mtgnn_tc_gated_ntnl_',
+parser.add_argument('--save', type=str, default='models/Tetuan_XCGNN_',
                     help='path to save the final model')
 parser.add_argument('--optim', type=str, default='adam')
 parser.add_argument('--L1Loss', type=bool, default=True)
