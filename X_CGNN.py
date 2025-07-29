@@ -229,7 +229,7 @@ def main():
 
     # Load the best saved model.
     with open(args.save + str(args.horizon) + '.pt', 'rb') as f:
-        model = torch.load(f)
+        model = torch.load(f, weights_only=False)
 
     vtest_acc, vtest_rae, vtest_corr, val_Mae, val_Mse, val_Mape = evaluate(Data, Data.valid[0], Data.valid[1], model, evaluateL2, evaluateL1,
                                          args.batch_size)
